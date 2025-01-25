@@ -212,3 +212,71 @@ header nav a{
 .carousel .list .item:nth-child(2) .intro .seeMore{
     animation-delay: 1.3s;
 }
+/*next click effect*/
+.carousel.next .list .item:nth-child(1){
+    animation: positionItem2 0.5s ease-in-out 1 forwards;
+}
+@keyframes positionItem2{
+    from{
+        transform: var(--item2-transform);
+        filter: var(--item2-filter);
+        z-index: var(--item2-zindex);
+        opacity: var(--item2-opacity);  
+    }
+}
+.carousel.next .list .item:nth-child(2){
+    animation: positionItem3 0.7s ease-in-out 1 forwards;
+}
+@keyframes positionItem3{
+    from{
+        transform: var(--item3-transform);
+        filter: var(--item3-filter);
+        opacity: var(--item3-opacity);
+        z-index: var(--item3-zindex);
+    }
+}
+
+.carousel.next .list .item:nth-child(3){
+    animation: positionItem4 0.9s ease-in-out 1 forwards;
+}
+@keyframes positionItem4 {
+   from{
+    transform: var(--item4-transform);
+    filter: var(--item4-filter);
+    opacity: var(--item4-opacity);
+    z-index: var(--item4-zindex);
+   }
+}
+.carousel.next .list .item:nth-child(4){
+    animation: positionItem5 0.9s ease-in-out 1 forwards;
+}
+@keyframes positionItem5 {
+    from{
+        transform: var(--item5-transform);
+        filter: var(--item5-filter);
+        opacity: var(--item5-opacity);
+        z-index: var(--item5-zindex);
+    }
+}
+
+/*adding prev animation effects */
+.carousel.prev .list .item:nth-child(2){
+    animation: positionItem1 0.5s ease-in-out 1 forwards;
+}
+@keyframes positionItem1 {
+    from{
+        transform: var(--item1-transform);
+        filter: var(--item1-filter);
+        z-index: var(--item1-zindex);
+        opacity: var(--item1-opacity);
+    }
+}
+.carousel.prev .list .item:nth-child(3){
+    animation: positionItem2 0.5s ease-in-out 1 forwards;
+}
+.carousel.prev .list .item:nth-child(4){
+    animation: positionItem3 0.5s ease-in-out 1 forwards;
+}
+.carousel.prev .list .item:nth-child(5){
+    animation: positionItem4 0.5s ease-in-out 1 forwards;
+}
